@@ -14,8 +14,6 @@ To develop a neural network regression model for the given dataset.
 
 ## Neural Network Model
 
-![output](./images/network.jpg)
-
 ## DESIGN STEPS
 
 ### STEP 1:
@@ -118,15 +116,19 @@ ai_brain.predict(inp_scale)
 
 ## Dataset Information
 
-![output](./images/input.png)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/45ef9a96-d6e3-4ae0-a74e-302bac0f4782)
+
 
 ## OUTPUT
 
 ## Training Loss Vs Iteration Plot
-![output](./images/o2.png)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/98a585b8-107d-44cf-b645-d59104497783)
+
+
 ## Test Data Root Mean Squared Error
 
-![output](./images/o1.png)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/3d6bcb0d-2441-4d40-8c41-19b96ff2724e)
+
 
 ## New Sample Data Prediction
 
