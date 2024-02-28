@@ -14,6 +14,9 @@ To develop a neural network regression model for the given dataset.
 
 ## Neural Network Model
 
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/a0bf58cd-cb44-4965-88f8-dcdfe335bb41)
+
+
 ## DESIGN STEPS
 
 ### STEP 1:
