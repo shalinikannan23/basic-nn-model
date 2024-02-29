@@ -14,7 +14,8 @@ To develop a neural network regression model for the given dataset.
 
 ## Neural Network Model
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/a0bf58cd-cb44-4965-88f8-dcdfe335bb41)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/6a9ad24d-d72b-4572-88db-3214cbbcef64)
+
 
 
 ## DESIGN STEPS
@@ -78,30 +79,27 @@ worksheet = gc.open('Data').sheet1
 rows = worksheet.get_all_values()
 df = pd.DataFrame(rows[1:], columns=rows[0])
 df.head()
-df=df.astype({'Input':'float'})
-df=df.astype({'Output':'float'})
 X=df[['Input']].values
 Y=df[['Output']].values
 ```
 
 ## Split the testing and training data
 ```py
-x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=0.33,random_state=50)
-scaler=MinMaxScaler()1
-scaler.fit(x_train)
-x_t_scaled = scaler.transform(x_train)
-x_t_scaled
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.5,random_state=40)
+Scaler = MinMaxScaler()
+Scaler.fit(x_train)
+X_train1 = Scaler.transform(x_train)
 ```
 
 ## Build the Deep learning Model
 ```py
-ai_brain = Sequential([
-    Dense(3,activation='relu'),
-    Dense(4,activation='relu'),
+ai_brain=Sequential([
+    Dense(9,activation = 'relu',input_shape=[1]),
+    Dense(16,activation = 'relu'),
     Dense(1)
 ])
-ai_brain.compile(optimizer='rmsprop',loss='mse')
-ai_brain.fit(x=x_t_scaled,y=y_train,epochs=50)
+ai_brain.compile(optimizer='adam',loss='mse')
+ai_brain.fit(X_train1,y_train.astype(np.float32),epochs=2000)
 
 loss_df = pd.DataFrame(ai_brain.history.history)
 loss_df.plot()
@@ -109,33 +107,33 @@ loss_df.plot()
 
 ## Evaluate the Model
 ```py
-scal_x_test=scaler.transform(x_test)
-ai_brain.evaluate(scal_x_test,y_test)
-input=[[120]]
-inp_scale=scaler.transform(input)
-inp_scale.shape
-ai_brain.predict(inp_scale)
+test=Scaler.transform(x_test)
+ai_brain.evaluate(test,y_test.astype(np.float32))
+n1=[[40]]
+n1_1=Scaler.transform(n1)
+ai_brain.predict(n1_1)
 ```
 
 ## Dataset Information
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/45ef9a96-d6e3-4ae0-a74e-302bac0f4782)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/a0610a1a-b27c-48ae-a4fd-3ba4758cdb1c)
 
 
 ## OUTPUT
 
 ## Training Loss Vs Iteration Plot
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/98a585b8-107d-44cf-b645-d59104497783)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/8613b556-1cf1-4f92-afeb-2a01beb28550)
 
 
 ## Test Data Root Mean Squared Error
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/3d6bcb0d-2441-4d40-8c41-19b96ff2724e)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/408fcfce-0e2d-422e-8a9a-46cd80b7c610)
 
 
 ## New Sample Data Prediction
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/0dfe0727-e9d2-4056-bc30-0e7ceceba332)
+![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/926eb56e-0d04-4201-a187-5617e9448799)
+
 
 
 ## RESULT
