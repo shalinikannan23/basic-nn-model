@@ -14,7 +14,7 @@ To develop a neural network regression model for the given dataset.
 
 ## Neural Network Model
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/6a9ad24d-d72b-4572-88db-3214cbbcef64)
+<img height=10% width=30% src ="https://github.com/shalinikannan23/basic-nn-model/assets/118656529/6a9ad24d-d72b-4572-88db-3214cbbcef64">
 
 
 
@@ -116,23 +116,23 @@ ai_brain.predict(n1_1)
 
 ## Dataset Information
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/a0610a1a-b27c-48ae-a4fd-3ba4758cdb1c)
+<img height=50% width=30% src ="https://github.com/shalinikannan23/basic-nn-model/assets/118656529/a0610a1a-b27c-48ae-a4fd-3ba4758cdb1c">
 
 
 ## OUTPUT
 
 ## Training Loss Vs Iteration Plot
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/8613b556-1cf1-4f92-afeb-2a01beb28550)
+<img height=10% width=30% src ="https://github.com/shalinikannan23/basic-nn-model/assets/118656529/8613b556-1cf1-4f92-afeb-2a01beb28550">
 
 
 ## Test Data Root Mean Squared Error
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/408fcfce-0e2d-422e-8a9a-46cd80b7c610)
+<img height=10% width=30% src ="https://github.com/shalinikannan23/basic-nn-model/assets/118656529/408fcfce-0e2d-422e-8a9a-46cd80b7c610">
 
 
 ## New Sample Data Prediction
 
-![image](https://github.com/shalinikannan23/basic-nn-model/assets/118656529/926eb56e-0d04-4201-a187-5617e9448799)
+<img height=10% width=30% src ="https://github.com/shalinikannan23/basic-nn-model/assets/118656529/926eb56e-0d04-4201-a187-5617e9448799">
 
 
 
